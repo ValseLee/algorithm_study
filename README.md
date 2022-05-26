@@ -1,2 +1,10 @@
 # algorithm_study
-This is a auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+*start : 220524*
+### Programmers
+- Lv.1
+    - ☑ : K번째수
+    - ☑ : 로또 순위
+    - ☑ : 숫자 문자열
+---
+### BOJ
+- 
