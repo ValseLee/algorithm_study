@@ -1,0 +1,28 @@
+def solution(lottos, win_nums):
+    answer = [0, 0]
+    count = 0
+    list = [6,5,4,3,2,1]
+    
+    # 기본 맞은 개수
+    for i in lottos:
+        for j in win_nums:
+            if i == j:
+                count += 1
+    zeros = lottos.count(0)       
+    highScore = count + zeros
+    
+    # 0가 6개일 경우 -> 1등
+    if zeros == 6:
+        answer[0] = 1
+    elif zeros == 0 and count == 0:
+        answer[0] = 6
+    else: answer[0] = list[highScore-1]
+    
+    # 0가 6개일 경우 -> 6등
+    if zeros == 6:
+        answer[1] = 6
+    elif zeros == 0 and count == 0:
+        answer[1] = 6
+    else: answer[1] = list[count-1]
+    
+    return answer
