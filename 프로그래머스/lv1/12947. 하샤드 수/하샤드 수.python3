@@ -1,0 +1,19 @@
+def solution(x):
+    answer = True
+    tmp = [str(x)]
+    k = []
+
+    for i in range(0,5):
+        k.append(tmp[0][i:i+1])
+        if k[i] != '':
+            k[i] = int(k[i])
+        else:
+            k[i] = 0
+    a = sum(k)
+    
+    if x % a == 0:
+        answer = True
+    else:
+        answer = False
+        
+    return answer
