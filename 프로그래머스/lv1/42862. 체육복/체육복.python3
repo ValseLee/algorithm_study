@@ -1,0 +1,21 @@
+def solution(n, lost, reserve):
+    answer = 0
+    _lost = sorted(lost)
+    _reserve = sorted(reserve)
+    
+    for i in range(len(_reserve)): # 옷 못빌려 주는 깍두기
+        for j in range(len(_lost)):
+            if _reserve[i] == _lost[j]:
+                _reserve[i] = float('inf')
+                _lost[j] = float('inf')
+            
+    for i in range(len(_reserve)): # 옷 빌려주고 깍두기
+        for j in range(len(_lost)):
+            if abs(_reserve[i] - _lost[j]) == 1:
+                _reserve[i] = float('inf')
+                _lost[j] = float('inf')
+            
+    cantAttend = [x for x in _lost if x != float('inf')] # 옷 없는 애들
+    answer = n - len(cantAttend)
+    
+    return answer
