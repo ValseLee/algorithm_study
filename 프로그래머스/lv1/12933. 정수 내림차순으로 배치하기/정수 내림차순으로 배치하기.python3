@@ -1,0 +1,16 @@
+def solution(n):
+    k = str(n)
+    l = ''
+    tmp = [int(i) for i in k]
+    answer = []
+
+    for i in tmp:
+        answer.append(max(tmp))
+        tmp.remove(max(tmp))
+        tmp.append(0)
+        
+    for j in answer:
+        l += str(j)
+
+    answer = int(l)
+    return answer
