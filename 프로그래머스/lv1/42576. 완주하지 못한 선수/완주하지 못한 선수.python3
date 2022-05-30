@@ -1,0 +1,19 @@
+def solution(participant, completion):
+    hs = 0
+    dic = {}
+    for i in participant:
+        hd = hash(i)
+        dic[hd] = i
+        hs += hd
+        
+    for i in completion:
+        hs -= hash(i)
+        
+    answer = dic[hs]
+    return answer
+
+# time-out one
+
+# for i in completion
+#   participant.remove(i)
+# return participant[0]
