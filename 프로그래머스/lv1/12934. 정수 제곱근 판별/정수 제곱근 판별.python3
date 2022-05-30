@@ -1,0 +1,13 @@
+def solution(n):
+    answer = 1
+    while answer < n:
+        answer += 1
+        if answer ** 2 == n:
+            answer = (answer + 1) ** 2
+    if answer == n:
+        answer = -1
+    
+    if n == 1:
+        answer = 4
+        
+    return answer
