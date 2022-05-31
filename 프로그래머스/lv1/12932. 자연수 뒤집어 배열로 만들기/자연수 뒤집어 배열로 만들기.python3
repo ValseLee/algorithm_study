@@ -1,0 +1,11 @@
+def solution(n):
+    tmp = []
+    answer = []
+
+    for i in str(n):
+        tmp.append(int(i))
+
+    for j in range(len(tmp),0,-1):
+        answer.append(tmp[j-1])
+        
+    return answer
