@@ -1,0 +1,10 @@
+def solution(d, budget):
+    cnt = 0
+    k = sorted(d)
+    answer = 0
+    
+    for i in k:
+        if cnt + i <= budget:
+            cnt += i
+            answer += 1
+    return answer
