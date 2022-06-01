@@ -1,0 +1,25 @@
+import string
+def solution(s, n):
+    tmp = list(map(str, s))
+    char_low = list(string.ascii_lowercase)
+    char_upp = list(string.ascii_uppercase)
+    ans = ''
+    
+    for i in range(0, len(tmp)):
+        if tmp[i] in char_low:
+            k = char_low.index(tmp[i])
+            if k+n <= 25:
+                tmp[i] = char_low[k+n]
+            if k+n > 25:
+                tmp[i] = char_low[(k+n)-25-1]
+            
+        if tmp[i] in char_upp:
+            k = char_upp.index(tmp[i])
+            if k+n <= 25:
+                tmp[i] = char_upp[k+n]
+            if k+n > 25:
+                tmp[i] = char_upp[(k+n)-25-1]
+                
+    for i in tmp:
+        ans += i
+    return ans
