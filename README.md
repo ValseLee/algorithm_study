@@ -1,6 +1,6 @@
 # algorithm_study
-*start : 220524*
-*stack : Python, Swift5
+- start : 220524*  
+- stack : Python, Swift5
 ### Programmers
 - Lv.1
     - ☑ : K번째수
