@@ -1,13 +1,2 @@
-# algorithm_study
-- start : 220524*  
-- stack : Python, Swift5
-### Programmers
-- Lv.1
-    - ☑ : K번째수
-    - ☑ : 로또 순위
-    - ☑ : 숫자 문자열
-    - ☑ : 체육복
-    - ☑ : x 간격 n개 숫자
----
-### BOJ
-- 
+# Algorithm 만이 살 길
+[![LeetCode Stats](https://leetcard.jacoblin.cool/ValseLee?theme=unicorn&extension=activity)](https://leetcard.jacoblin.cool/JacobLinCool?theme=unicorn&extension=activity)
