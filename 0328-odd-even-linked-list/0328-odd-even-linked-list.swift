@@ -10,6 +10,10 @@
  */
 class Solution {
   func oddEvenList(_ head: ListNode?) -> ListNode? {
+    if head == nil { return nil }
+    if head?.next == nil { return head }
+    if head?.next?.next == nil { return head }
+      
     var odd = head
     var even = head?.next
     var evenHead = even
